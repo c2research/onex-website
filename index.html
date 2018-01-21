@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ONEX: Onlinex Exploration of Time Series</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        ONEX
+                    </a>
+                </li>
+                <li>
+                    <a href="#intro">Introduction</a>
+                </li>
+                <li>
+                    <a href="#publications">Publications</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#members">Members</a>
+                </li>
+            </ul>
+            <img id="logo" src="images/wpi_logo_red.png" width=150/>
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <h1>ONEX: Online Exploration of Time Series</h1>
+
+            <div id="intro" class="section">
+                <h2>Introduction</h2>
+                <p>Finding similar trends among time series data is critical for applications ranging from financial planning to 
+                    policy making. The detection of these multifaceted relationships, especially time warped matching of time series
+                    of different lengths and alignments is prohibitively expensive to compute. To achieve real time responsiveness on
+                    large time series datasets, we propose a novel paradigm called Online Exploration of Time Series (ONEX) employing
+                    a powerful one-time preprocessing step that encodes critical similarity relationships to support subsequent rapid
+                    data exploration. Since the encoding of a huge number of pairwise similarity relationships for all variable lengths
+                    time series segments is not feasible, our work rests on the important insight that clustering with inexpensive 
+                    point-to-point distances such as the Euclidean Distance can support subsequent time warped matching.
+                    Our ONEX framework overcomes the prohibitive computational costs associated with a more robust elastic distance namely
+                    the DTW by applying it over the surprisingly compact knowledge base instead of the raw data.</p>
+                <br/>            
+                <div>
+                    <img src="images/onex_base.png" width=300>
+                </div>
+            </div>
+            <!-- <p>Our comparative study reveals that ONEX is up to 19% more accurate and several times faster than the state-of-the-art.
+                Beyond being a highly accurate and fast domain independent solution, ONEX offers a truly interactive exploration
+                experience supporting novel time series operations.</p> -->
+
+            <!-- Use this if want to toggle/untoggle menu <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+            <hr>
+
+            <div id="publications" class="section">
+                <h2>Publications</h2>                
+                <ul>
+                    <li>Neamtu, R., Ahsan, R., Rundensteiner, E., &amp; Sarkozy, G. (2016). Interactive time series exploration 
+                        powered by the marriage of similarity distances. Proceedings of the VLDB Endowment, 10(3), 169-180.
+                        (<a href="#">pdf</a>)</li>
+                    <li>Neamtu, R., Ahsan, R., Lovering, C., Nguyen, C., Rundensteiner, E., &amp; Sarkozy, G. (2017, May).
+                        Interactive Time Series Analytics Powered by ONEX. In Proceedings of the 2017 ACM International 
+                        Conference on Management of Data (pp. 1595-1598). ACM.
+                        (<a href="https://www.researchgate.net/publication/321757274_Ranked_Time_Series_Matching_by_Interleaving_Similarity_Distances">pdf</a>)</li>
+                    <li>Nguyen, C., Lovering, C., &amp; Neamtu, R. Ranked Time Series Matching by Interleaving Similarity Distances.
+                        4th Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery 2017. IEEE Big Data 2017.
+                        (<a href="https://www.researchgate.net/profile/Rodica_Neamtu/publication/321757274_Ranked_Time_Series_Matching_by_Interleaving_Similarity_Distances/links/5a302d02aca27271ec89f628/Ranked-Time-Series-Matching-by-Interleaving-Similarity-Distances.pdf">pdf</a>)</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div id="projects" class="section">
+                <h2>Projects</h2>                
+                <h3>ONEX</h3>
+                    
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DDE_xTt2t_Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+                <br/>
+                <br/>
+                <br/>
+    
+                <h3>K-ONEX</h3>
+                <img src="images/group_heat_map_all.png" width=300>
+                
+            </div>
+            
+            <hr>
+
+            <div id="members" class="section">
+                <h2>Members</h2>                
+                <h3>Professors</h3>
+                    <ul>
+                        <li>Rodica Neamtu</li>
+                        <li>Elke Rundensteiner</li>
+                        <li>Garbor Sarkozy</li>
+                    </ul>
+                <h3>Students</h3>
+                    <ul>
+                        <li>Ramoza Ahsan</li>
+                        <li>Cuong Nguyen</li>
+                        <li>Charles Lovering</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+</div>
+<!-- /#wrapper -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>
