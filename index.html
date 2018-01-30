@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Website for Online Exploration of Time Series - ONEX (WPI)">
+    <meta name="author" content="Cuong Nguyen">
 
     <title>Onlinex Exploration of Time Series</title>
 
@@ -20,35 +20,38 @@
 
 <body>
 
-    <div id="wrapper" class="toggled">
+<div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        ONEX
-                    </a>
-                </li>
-                <li>
-                    <a href="#intro">Introduction</a>
-                </li>
-                <li>
-                    <a href="#publications">Publications</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#members">Members</a>
-                </li>
-            </ul>
-            <img id="logo" src="images/wpi_logo_red.png" width=150/>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    ONEX
+                </a>
+            </li>
+            <li>
+                <a href="#intro">Introduction</a>
+            </li>
+            <li>
+                <a href="#publications">Publications</a>
+            </li>
+            <li>
+                <a href="#datasets">Datasets</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#people">People</a>
+            </li>
+        </ul>
+        <img id="logo" src="images/wpi_logo_red.png" width=150/>
 
-        </div>
-        <!-- /#sidebar-wrapper -->
+    </div>
+    <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
+    <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container">
             <h1>Online Exploration of Time Series</h1>
@@ -69,10 +72,6 @@
                     <img src="images/onex_base.png" width=300>
                 </div>
             </div>
-            <!-- <p>Our comparative study reveals that ONEX is up to 19% more accurate and several times faster than the state-of-the-art.
-                Beyond being a highly accurate and fast domain independent solution, ONEX offers a truly interactive exploration
-                experience supporting novel time series operations.</p> -->
-
             <!-- Use this if want to toggle/untoggle menu <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
             <hr>
 
@@ -94,49 +93,100 @@
 
             <hr>
 
+            <div id="datasets" class="section">
+                <h2>Datasets</h2>
+                Our systems are evaluated on datasets from the <a href="http://www.cs.ucr.edu/~eamonn/time_series_data/" target="_blank">UCR Time Series Classifiation Archive.</a>
+            </div>
+
+            <hr>
+
             <div id="projects" class="section">
                 <h2>Projects</h2>                
-                <h3>ONEX</h3>
-                    
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DDE_xTt2t_Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                
+                <h4>ONEX</h4>
+                Backend system: <a href="https://github.com/onexAdditional/onex" target="_blank">source</a>
                 <br/>
                 <br/>
+                <div class="text-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DDE_xTt2t_Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <br/>
-    
-                <h3>K-ONEX</h3>
+                <br/>
+                <h4>K-ONEX</h4>
 
                 <p>Our proposed method K-ONEX, uses a preprocess-once and query-many-times paradigm that interleaves the inexpensive Euclidean distance
                 with the robust Dynamic Time Warping (DTW), to retrieve the k most similar matches to a given sample sequence. We first reduce the
                 data cardinality by generating Euclidean-based groups of similar time series. Then these groups are further explored using the elastic
                 DTW to find similar sequences of any length and temporal alignment. Our evaluation shows that our framework is 2-3 orders of magnitude
-                faster than benchmark methods while achieving 100\% accuracy by exploring on average less than 0.5% of the sequences in each dataset.</p>
-                <img src="images/group_heat_map_all.png" width=300>
-                
+                faster than benchmark methods while achieving 100% accuracy by exploring on average less than 0.5% of the sequences in each dataset.</p>
+                <div class="text-center">
+                    <img src="images/group_heat_map_all.png" width=300>                
+                </div>
             </div>
             
             <hr>
 
-            <div id="members" class="section">
-                <h2>Members</h2>                
-                <h3>Professors</h3>
-                    <ul>
-                        <li>Rodica Neamtu</li>
-                        <li>Elke Rundensteiner</li>
-                        <li>Garbor Sarkozy</li>
-                    </ul>
-                <h3>Students</h3>
-                    <ul>
-                        <li>Ramoza Ahsan</li>
-                        <li>Cuong Nguyen</li>
-                        <li>Charles Lovering</li>
-                    </ul>
+            <div id="people" class="section">
+                <h2>People</h2>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                            <img class="img-responsive d-block" src="images/rodica.jpg" width=180>
+                            <h5 class="mt-2">
+                                <a href="http://web.cs.wpi.edu/~rneamtu/">Rodica Neamtu</a>
+                            </h5>
+                            Professor<br/>
+                            Computer Science &amp; Data Science<br/>
+                            Email: rneamtu at wpi.edu
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                            <img class="img-responsive d-block" src="images/elke.jpg" width=180>
+                            <h5 class="mt-2">
+                                <a href="http://davis.wpi.edu/dsrg/MEMBERS/rundenst/">Elke Rundensteiner</a>
+                            </h5>
+                            Professor<br/>
+                            Computer Science &amp; Data Science<br/>
+                            Email: rundenst at cs.wpi.edu
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                            <img class="img-responsive d-block" src="images/person.jpg" width=180>
+                            <h5 class="mt-2">
+                                <a href="http://web.cs.wpi.edu/~gsarkozy/">Garbor Sarkozy</a>
+                            </h5>
+                            Professor<br/>
+                            Computer Science<br/>
+                            Email: gsarkozy at cs.wpi.edu
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                                <img class="img-responsive d-block" src="images/ramoza.jpg" width=180>
+                                <h5 class="mt-2">
+                                    <a href="http://web.cs.wpi.edu/~rahsan/">Ramoza Ahsan</a>
+                                </h5>
+                                PhD Candidate<br/>
+                                Computer Science<br/>
+                                Email: rahsan at wpi.edu
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                                <img class="img-responsive d-block" src="images/person.jpg" width=180>
+                                <h5 class="mt-2">Cuong Nguyen</h5>
+                                Undergraduate Student<br/>
+                                Computer Science<br/>
+                                Email: ctnguyendinh at wpi.edu
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-sm-6 mt-5">
+                                <img class="img-responsive d-block" src="images/person.jpg" width=180>
+                                <h5 class="mt-2">Charles Lovering</h5>
+                                Undergraduate Student<br/>
+                                Computer Science<br/>
+                                Email: cjlovering at wpi.edu
+                            </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
     <!-- /#page-content-wrapper -->
-
-
 
 </div>
 <!-- /#wrapper -->
