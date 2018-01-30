@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ONEX: Onlinex Exploration of Time Series</title>
+    <title>Onlinex Exploration of Time Series</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,22 +50,21 @@
 
 <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <h1>ONEX: Online Exploration of Time Series</h1>
+        <div class="container">
+            <h1>Online Exploration of Time Series</h1>
 
             <div id="intro" class="section">
                 <h2>Introduction</h2>
-                <p>Finding similar trends among time series data is critical for applications ranging from financial planning to 
-                    policy making. The detection of these multifaceted relationships, especially time warped matching of time series
-                    of different lengths and alignments is prohibitively expensive to compute. To achieve real time responsiveness on
-                    large time series datasets, we propose a novel paradigm called Online Exploration of Time Series (ONEX) employing
-                    a powerful one-time preprocessing step that encodes critical similarity relationships to support subsequent rapid
-                    data exploration. Since the encoding of a huge number of pairwise similarity relationships for all variable lengths
-                    time series segments is not feasible, our work rests on the important insight that clustering with inexpensive 
-                    point-to-point distances such as the Euclidean Distance can support subsequent time warped matching.
-                    Our ONEX framework overcomes the prohibitive computational costs associated with a more robust elastic distance namely
-                    the DTW by applying it over the surprisingly compact knowledge base instead of the raw data.</p>
-                <br/>            
+                <p>The ability to find similar trends among time series data is crucial in various disciplines ranging from financial analytics
+                    to medical diagnosis. Evaluation of similarity between time series with different lengths and those with temporal misalignment 
+                    using robust measurement such as dynamic time warping (DTW) is computationally expensive. To overcome
+                    this challenge, we propose a paradigm that which utilizes a one-time preprocessing step to supports rapid subsequent data exploration.
+                    Our work rests on the novel idea that we can encode the similarity relationships in the preprocessing step using the inexpensive 
+                    Euclidean Distance into compact clusters, on which we can perform very fast online time warped matching using the more expensive DTW.</p>
+                <p>Based upon this idea, we implement an Online Time Series Exploration system (ONEX) that helps analysts perform similar search at any length
+                    on time series datasets. The system also comes with an interactive interface for better visualization of the results. Additionally, the successor
+                    of ONEX, called K-ONEX, can perform fast ranked search, returning the top k most similar time series.</p>
+                <br/>
                 <div>
                     <img src="images/onex_base.png" width=300>
                 </div>
@@ -82,14 +81,14 @@
                 <ul>
                     <li>Neamtu, R., Ahsan, R., Rundensteiner, E., &amp; Sarkozy, G. (2016). Interactive time series exploration 
                         powered by the marriage of similarity distances. Proceedings of the VLDB Endowment, 10(3), 169-180.
-                        (<a href="#">pdf</a>)</li>
+                        (<a target="_blank" href="InteractiveTimeSeriesExploration.pdf">pdf</a>)</li>
                     <li>Neamtu, R., Ahsan, R., Lovering, C., Nguyen, C., Rundensteiner, E., &amp; Sarkozy, G. (2017, May).
                         Interactive Time Series Analytics Powered by ONEX. In Proceedings of the 2017 ACM International 
                         Conference on Management of Data (pp. 1595-1598). ACM.
-                        (<a href="https://www.researchgate.net/publication/321757274_Ranked_Time_Series_Matching_by_Interleaving_Similarity_Distances">pdf</a>)</li>
+                        (<a target="_blank" href="InteractiveTimeSeriesAnalytics.pdf">pdf</a>)</li>
                     <li>Nguyen, C., Lovering, C., &amp; Neamtu, R. Ranked Time Series Matching by Interleaving Similarity Distances.
                         4th Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery 2017. IEEE Big Data 2017.
-                        (<a href="https://www.researchgate.net/profile/Rodica_Neamtu/publication/321757274_Ranked_Time_Series_Matching_by_Interleaving_Similarity_Distances/links/5a302d02aca27271ec89f628/Ranked-Time-Series-Matching-by-Interleaving-Similarity-Distances.pdf">pdf</a>)</li>
+                        (<a target="_blank" href="RankedTimeSeriesMatching.pdf">pdf</a>)</li>
                 </ul>
             </div>
 
