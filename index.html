@@ -14,44 +14,45 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!--<link href="css/simple-sidebar.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
 <div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">ONEX</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#datasets">Datasets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#people">People</a>
+                </li>    
+            </ul>
+        </div>
+    </nav>
+    <!-- End navigation -->
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    ONEX
-                </a>
-            </li>
-            <li>
-                <a href="#intro">Introduction</a>
-            </li>
-            <li>
-                <a href="#publications">Publications</a>
-            </li>
-            <li>
-                <a href="#datasets">Datasets</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#people">People</a>
-            </li>
-        </ul>
-        <img id="logo" src="images/wpi_logo_red.png" width=150/>
-
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
+    <!-- Page content -->
     <div id="page-content-wrapper">
         <div class="container">
             <h1>Online Exploration of Time Series</h1>
@@ -186,7 +187,7 @@
                 </div>
             </div>
     </div>
-    <!-- /#page-content-wrapper -->
+    <!-- End page content -->
 
 </div>
 <!-- /#wrapper -->
@@ -196,10 +197,16 @@
 
 <!-- Menu Toggle Script -->
 <script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
+    // Prevent navbar from obscuring content
+    var shiftWindow = function() { scrollBy(0, -60) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+
+    // Toggle active on clicked link
+    $("nav a").on("click", function(){
+        $("nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });
 </script>
 
 </body>
